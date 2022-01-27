@@ -139,7 +139,7 @@ open class StackViewCell: UIView {
 
   // MARK: Internal
 
-  internal var tapHandler: ((UIView) -> Void)? {
+  public var tapHandler: ((UIView) -> Void)? {
     didSet { updateTapGestureRecognizerEnabled() }
   }
 
@@ -147,7 +147,7 @@ open class StackViewCell: UIView {
   // reflect whether the separator is hidden or not, since, for example, the separator could be
   // hidden because it's the last row in the stack view and
   // `automaticallyHidesLastSeparator` is `true`.
-  internal var shouldHideSeparator = false
+  public var shouldHideSeparator = false
 
   // MARK: Private
 
